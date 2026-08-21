@@ -107,6 +107,33 @@
 .album-link:hover {
     background: #1a1a1a;
 }
+  .album-cover {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 30px auto;
+    text-decoration: none;
+}
+
+.album-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #d4af37;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 25px;
+}
+
+.album-cover:hover .album-placeholder {
+    background: #1a1a1a;
+}      
 
 footer {
     text-align: center;
@@ -166,9 +193,10 @@ footer {
     <h2 class="section-title">Albums</h2>
 <div class="album">
 
-    <h3 class="album-title">The Rhythm Of My Heart</h3>
-<a href="the-rhythm-of-my-heart.html" class="album-link">
-    Open Album
+    <a href="the-rhythm-of-my-heart.html" class="album-cover">
+    <div class="album-placeholder">
+        THE RHYTHM OF MY HEART
+    </div>
 </a>
 
 
