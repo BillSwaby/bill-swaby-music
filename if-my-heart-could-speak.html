@@ -263,7 +263,18 @@
     </footer>
 
 </div>
+<script>
+document.querySelectorAll('audio').forEach(function(audio) {
+    audio.addEventListener('play', function() {
+        const song = audio.closest('.song').querySelector('h3').textContent;
 
+        gtag('event', 'song_play', {
+            song_title: song,
+            album: 'If My Heart Could Speak'
+        });
+    });
+});
+</script>
 </body>
 </html>
 
