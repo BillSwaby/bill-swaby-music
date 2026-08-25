@@ -1,180 +1,349 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9P135SD0D3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9P135SD0D3');
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Borrowed Hours by Bill Swaby — a song from The Rhythm Of My Heart about time slipping away, missed chances and choosing to live before the hours are gone.">
 
 <title>Borrowed Hours — Bill Swaby</title>
 
 <style>
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background: #0b0b0b;
-    color: #e6e6e6;
-    font-family: Georgia, serif;
-    text-align: center;
     margin: 0;
-    padding: 40px 20px;
+    background: #050505;
+    color: #e8e0d0;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
 .container {
-    max-width: 700px;
-    margin: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+h1 {
+    margin: 0;
+    color: #d4af37;
+    font-size: 42px;
+    letter-spacing: 4px;
+}
+
+.subtitle {
+    margin-top: 12px;
+    color: #bdb5a5;
+    font-size: 18px;
+}
+
+.album-name {
+    margin-top: 10px;
+    color: #9d8245;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.song {
+    background: #0b0b0b;
+    border: 1px solid #3d3422;
+    border-radius: 8px;
+    padding: 30px;
 }
 
 .song-cover {
     display: block;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
     margin: 0 auto 30px auto;
     border: 1px solid #d4af37;
     border-radius: 6px;
 }
 
-h1 {
-    color: #d4af37;
-    font-size: 32px;
-    margin-bottom: 5px;
-}
-
-.artist {
-    color: #c9a85c;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.album {
+.description {
+    max-width: 680px;
+    margin: 0 auto 30px auto;
+    text-align: center;
     color: #aaa;
-    font-size: 15px;
-    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 audio {
+    display: block;
     width: 100%;
-    max-width: 500px;
-    margin: 20px auto 35px auto;
+    margin: 0 auto 40px auto;
+}
+
+.section-title {
+    color: #d4af37;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #3d3422;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
 }
 
 .lyrics {
+    max-width: 700px;
+    margin: 0 auto;
     text-align: center;
-    line-height: 1.8;
+}
+
+.lyrics p {
+    color: #d8d0c0;
     font-size: 17px;
-    white-space: pre-line;
-    color: #ddd;
+    line-height: 1.9;
+    margin: 0 0 28px 0;
 }
 
-.back-link {
+.lyrics .chorus {
+    color: #e6c75a;
+}
+
+.back-buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-button {
     display: inline-block;
-    margin-top: 35px;
-    color: #c9a85c;
+    margin: 8px;
+    padding: 12px 24px;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    background: #0b0b0b;
+    border-radius: 6px;
     text-decoration: none;
-    font-size: 14px;
     letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
-.back-link:hover {
-    color: #d4af37;
+.back-button:hover {
+    background: #15120e;
+    color: #ffffff;
 }
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #292929;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 35px 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .song {
+        padding: 20px;
+    }
+
+    .song-cover {
+        width: 100%;
+        height: auto;
+    }
+
+    .lyrics p {
+        font-size: 16px;
+    }
+
+}
+
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
+<header>
+
+    <h1>BORROWED HOURS</h1>
+
+    <div class="subtitle">
+        Bill Swaby
+    </div>
+
+    <div class="album-name">
+        The Rhythm Of My Heart
+    </div>
+
+</header>
+
+<div class="song">
+
     <img class="song-cover"
          src="THE%20RHYTHM%20OF%20MY%20HEART.jpg"
          alt="The Rhythm Of My Heart — Bill Swaby">
 
-    <h1>Borrowed Hours</h1>
-
-    <div class="artist">Bill Swaby</div>
-
-    <div class="album">The Rhythm Of My Heart</div>
+    <p class="description">
+        A song about the passing of time, the chances we postpone,
+        and the realisation that life cannot be put off until tomorrow.
+    </p>
 
     <audio controls controlsList="nodownload">
         <source src="Borrowed%20Hours.mp3" type="audio/mpeg">
         Your browser does not support audio playback.
     </audio>
 
+    <h2 class="section-title">LYRICS</h2>
+
     <div class="lyrics">
 
-Ticking in the silence of a room you never chose
-Shadows stretch like questions that nobody really knows
-You wait for something bigger, but the days just slip away
-Trading all your tomorrows for another idle day
+        <p>
+            Ticking in the silence of a room you never chose<br>
+            Shadows stretch like questions that nobody really knows<br>
+            You wait for something bigger, but the days just slip away<br>
+            Trading all your tomorrows for another idle day
+        </p>
 
+        <p>
+            You say you’ll start tomorrow<br>
+            When the moment feels right<br>
+            But the clock keeps on laughing<br>
+            As it steals from your life
+        </p>
 
-You say you’ll start tomorrow
-When the moment feels right
-But the clock keeps on laughing
-As it steals from your life
+        <p class="chorus">
+            And the time slips through your hands like sand<br>
+            No warning, no second chance<br>
+            You were young, now you’re looking back<br>
+            At the ghost of a promised plan<br>
+            Every second you never claimed<br>
+            Is a memory you can’t reclaim<br>
+            So don’t let the hours just fade away<br>
+            Like echoes in the grey
+        </p>
 
+        <p>
+            Running through the same streets, chasing something undefined<br>
+            Faces blur like pictures in the corners of your mind<br>
+            Every year gets shorter, every dream a little thin<br>
+            You don’t hear the starting gun, but somehow you’re near the end
+        </p>
 
-And the time slips through your hands like sand
-No warning, no second chance
-You were young, now you’re looking back
-At the ghost of a promised plan
-Every second you never claimed
-Is a memory you can’t reclaim
-So don’t let the hours just fade away
-Like echoes in the grey
+        <p>
+            You thought you had forever<br>
+            Now forever feels small<br>
+            Like a light in the distance<br>
+            That you can’t reach at all
+        </p>
 
+        <p class="chorus">
+            And the time slips through your hands like sand<br>
+            No warning, no second chance<br>
+            You were young, now you’re looking back<br>
+            At the ghost of a promised plan<br>
+            Every second you never claimed<br>
+            Is a memory you can’t reclaim<br>
+            So don’t let the hours just fade away<br>
+            Like echoes in the grey
+        </p>
 
-Running through the same streets, chasing something undefined
-Faces blur like pictures in the corners of your mind
-Every year gets shorter, every dream a little thin
-You don’t hear the starting gun, but somehow you’re near the end
+        <p>
+            And then one day you wake to find<br>
+            The past is all that fills your mind<br>
+            The dreams you had are out of reach<br>
+            Like distant shores you couldn’t breach<br>
+            The ticking grows too loud to hide<br>
+            A rhythm you can’t leave behind
+        </p>
 
+        <p>
+            Time… time… slipping away…<br>
+            Time… time… don’t let it fade…
+        </p>
 
-You thought you had forever
-Now forever feels small
-Like a light in the distance
-That you can’t reach at all
+        <p class="chorus">
+            Now the time is in your hands again<br>
+            Don’t wait for a “someday” when<br>
+            You can stand where your heart demands<br>
+            Not just where you’ve always been<br>
+            Every second is yours to take<br>
+            Every choice is a line you make<br>
+            So don’t let your life just drift away<br>
+            In borrowed hours… in borrowed days…
+        </p>
 
-
-And the time slips through your hands like sand
-No warning, no second chance
-You were young, now you’re looking back
-At the ghost of a promised plan
-Every second you never claimed
-Is a memory you can’t reclaim
-So don’t let the hours just fade away
-Like echoes in the grey
-
-
-And then one day you wake to find
-The past is all that fills your mind
-The dreams you had are out of reach
-Like distant shores you couldn’t breach
-The ticking grows too loud to hide
-A rhythm you can’t leave behind
-
-
-Time… time… slipping away…
-Time… time… don’t let it fade…
-
-
-Now the time is in your hands again
-Don’t wait for a “someday” when
-You can stand where your heart demands
-Not just where you’ve always been
-Every second is yours to take
-Every choice is a line you make
-So don’t let your life just drift away
-In borrowed hours… in borrowed days…
-
-
-Ticking fades but the truth remains
-You don’t get back what time has claimed…
+        <p>
+            Ticking fades but the truth remains<br>
+            You don’t get back what time has claimed…
+        </p>
 
     </div>
 
-    <a class="back-link" href="the-rhythm-of-my-heart.html">
+</div>
+
+<div class="back-buttons">
+
+    <a class="back-button"
+       href="the-rhythm-of-my-heart.html">
         ← BACK TO THE RHYTHM OF MY HEART
+    </a>
+
+    <a class="back-button"
+       href="https://billswaby.github.io/bill-swaby-music/">
+        ← BACK TO MY MUSIC
     </a>
 
 </div>
 
+<footer>
+
+    © 2026 Bill Swaby — All Rights Reserved<br>
+    Borrowed Hours — Original song by Bill Swaby
+
+</footer>
+
+</div>
+
+<script>
+
+document.querySelector('audio').addEventListener('play', function() {
+
+    gtag('event', 'song_play', {
+        song_title: '01 Borrowed Hours',
+        album: 'The Rhythm Of My Heart'
+    });
+
+});
+
+</script>
+
 </body>
 </html>
+
