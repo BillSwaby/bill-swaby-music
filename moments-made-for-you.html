@@ -2,378 +2,359 @@
 <html lang="en">
 <head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9P135SD0D3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9P135SD0D3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-9P135SD0D3');
-    </script>
+    gtag('config', 'G-9P135SD0D3');
+</script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Moments Made For You — Bill Swaby</title>
+<meta name="description" content="Moments Made For You by Bill Swaby — a heartfelt love song about love, memories, devotion and finding your way back to the person you love.">
 
-    <meta name="description"
-          content="Moments Made For You by Bill Swaby — a heartfelt song about love, memories, devotion and always finding your way back to the person you love.">
+<title>Moments Made For You — Bill Swaby</title>
 
-    <style>
+<style>
 
-        * {
-            box-sizing: border-box;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        html {
-            scroll-behavior: smooth;
-        }
+body {
+    margin: 0;
+    background: #050505;
+    color: #e8e0d0;
+    font-family: Georgia, "Times New Roman", serif;
+}
 
-        body {
-            margin: 0;
-            background: #050505;
-            color: #e8e0d0;
-            font-family: Georgia, "Times New Roman", serif;
-        }
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 50px 25px;
-        }
+header {
+    text-align: center;
+    padding-bottom: 45px;
+}
 
-        header {
-            text-align: center;
-            padding-bottom: 35px;
-        }
+h1 {
+    margin: 0;
+    color: #d4af37;
+    font-size: 42px;
+    letter-spacing: 4px;
+}
 
-        h1 {
-            margin: 0;
-            color: #d4af37;
-            font-size: 38px;
-            letter-spacing: 3px;
-        }
+.subtitle {
+    margin-top: 12px;
+    color: #bdb5a5;
+    font-size: 18px;
+}
 
-        .subtitle {
-            margin-top: 12px;
-            color: #bdb5a5;
-            font-size: 18px;
-        }
+.album-name {
+    margin-top: 10px;
+    color: #9d8245;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
 
-        .song-page {
-            background: #0b0b0b;
-            border: 1px solid #3d3422;
-            border-radius: 8px;
-            padding: 30px;
-        }
+.song {
+    background: #0b0b0b;
+    border: 1px solid #3d3422;
+    border-radius: 8px;
+    padding: 30px;
+}
 
-        .song-number {
-            color: #d4af37;
-            font-size: 20px;
-            text-align: center;
-            letter-spacing: 2px;
-            margin-bottom: 25px;
-        }
+.song-cover {
+    display: block;
+    width: 300px;
+    height: 410px;
+    object-fit: cover;
+    margin: 0 auto 30px auto;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+}
 
-        .song-cover-placeholder {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 350px;
-            height: 350px;
-            margin: 0 auto 35px auto;
-            border: 1px solid #d4af37;
-            border-radius: 6px;
-            background: #111;
-            color: #777;
-            text-align: center;
-            font-size: 16px;
-            line-height: 1.5;
-            padding: 25px;
-        }
+.description {
+    max-width: 680px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    color: #aaa;
+    font-size: 17px;
+    line-height: 1.7;
+}
 
-        .song-description {
-            max-width: 650px;
-            margin: 15px auto 35px auto;
-            text-align: center;
-            color: #aaa;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+audio {
+    display: block;
+    width: 100%;
+    margin: 0 auto 40px auto;
+}
 
-        .player {
-            background: #111;
-            border: 1px solid #292929;
-            border-radius: 6px;
-            padding: 20px;
-            margin-bottom: 35px;
-        }
+.section-title {
+    color: #d4af37;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #3d3422;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
 
-        .player-title {
-            color: #e6c75a;
-            text-align: center;
-            font-size: 21px;
-            margin: 0 0 15px 0;
-        }
+.lyrics {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-        audio {
-            width: 100%;
-        }
+.lyrics p {
+    color: #d8d0c0;
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 0 28px 0;
+}
 
-        .lyrics-title {
-            color: #d4af37;
-            font-size: 28px;
-            text-align: center;
-            letter-spacing: 2px;
-            margin: 35px 0 25px 0;
-        }
+.lyrics .chorus {
+    color: #e6c75a;
+}
 
-        .lyrics {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-            color: #d8d0c0;
-            font-size: 17px;
-            line-height: 1.8;
-        }
+.back-buttons {
+    text-align: center;
+    margin-top: 40px;
+}
 
-        .lyrics p {
-            margin: 0 0 28px 0;
-        }
+.back-button {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 24px;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    background: #0b0b0b;
+    border-radius: 6px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
 
-        .back {
-            display: block;
-            text-align: center;
-            margin-top: 35px;
-            color: #d4af37;
-            text-decoration: none;
-            font-size: 20px;
-        }
+.back-button:hover {
+    background: #15120e;
+    color: #ffffff;
+}
 
-        .back:hover {
-            text-decoration: underline;
-        }
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #292929;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
 
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 25px;
-            border-top: 1px solid #292929;
-            color: #777;
-            font-size: 14px;
-        }
+@media (max-width: 600px) {
 
-    </style>
+    .container {
+        padding: 35px 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .song {
+        padding: 20px;
+    }
+
+    .song-cover {
+        width: 100%;
+        height: auto;
+    }
+
+    .lyrics p {
+        font-size: 16px;
+    }
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<div class="container" id="top">
+<div class="container">
 
-    <header>
+<header>
 
-        <h1>MOMENTS MADE FOR YOU</h1>
+    <h1>MOMENTS MADE FOR YOU</h1>
 
-        <div class="subtitle">
-           Bill Swaby
+    <div class="subtitle">
+        Bill Swaby
     </div>
 
-    <div class="album-name">  
-        Still Loving You
-        </div>
+    <div class="album-name">
+        Still Loving You — Song 01
+    </div>
 
-    </header>
+</header>
 
+<div class="song">
 
-    <div class="song-page">
+    <!-- Artwork will be added here when ready -->
 
+    <div class="song-cover"
+         style="display: flex; align-items: center; justify-content: center; text-align: center; color: #777; font-size: 16px; letter-spacing: 1px;">
+        MOMENTS MADE FOR YOU<br>
+        Artwork Coming Soon
+    </div>
 
-        <!-- ARTWORK WILL BE ADDED LATER -->
+    <p class="description">
+        A heartfelt song about love, memories and devotion —
+        about finding your way back to the person who feels like home,
+        and knowing that no matter where life takes you,
+        some moments are made for love.
+    </p>
 
-        <div class="song-cover-placeholder">
+    <audio controls controlsList="nodownload">
+        <source src="Moments%20Made%20For%20You.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
 
-            Artwork for<br>
-            <strong>MOMENTS MADE FOR YOU</strong><br><br>
-            Artwork will be added later.
+    <h2 class="section-title">LYRICS</h2>
 
-        </div>
+    <div class="lyrics">
 
-
-        <p class="song-description">
-
-            Moments Made For You is a heartfelt song about the kind of love
-            that lives in the small moments — the memories, the quiet comfort,
-            the laughter and the feeling of always finding your way back to
-            the person who means the most. It is a song about love that
-            remains true, no matter where life takes you.
-
+        <p>
+            You are the thought I return to,<br>
+            Like a favorite song at night,<br>
+            The kind that knows my heartbeat<br>
+            And holds it just right.<br>
+            When the day weighs heavy<br>
+            And the dark comes too quick<br>
+            I don’t reach for answers<br>
+            I just reach for you.
         </p>
 
+        <p>
+            Every road I thought was broken<br>
+            Leads me back to you<br>
+            All the words I never said before<br>
+            Finally feel like they belong.
+        </p>
 
-        <div class="player">
+        <p class="chorus">
+            If love is made of moments,<br>
+            Then mine are made for you,<br>
+            In every breath, in every hope,<br>
+            In everything I do.<br>
+            Yeah, time can try to change us,<br>
+            But this much stays true<br>
+            If love is made of moments,<br>
+            Then mine are made for you.
+        </p>
 
-            <h2 class="player-title">
-                MOMENTS MADE FOR YOU
-            </h2>
+        <p>
+            Your laughter feels like sunlight<br>
+            Finding cracks I didn’t see,<br>
+            And suddenly the world makes sense<br>
+            Because you’re here with me.<br>
+            All the quiet fears I carried<br>
+            Lose their weight<br>
+            Like the chaos in my head<br>
+            Finally settles down.
+        </p>
 
-            <audio controls controlsList="nodownload">>
+        <p>
+            Every doubt I used to trust<br>
+            Falls apart when you say my name,<br>
+            You don’t promise me forever<br>
+            You just love me all the same.
+        </p>
 
-                <source src="Moments%20Made%20For%20You.mp3"
-                        type="audio/mpeg">
+        <p class="chorus">
+            If love is made of moments,<br>
+            Then mine are made for you,<br>
+            In every breath, in every hope,<br>
+            In everything I do.<br>
+            Yeah, time can try to change us,<br>
+            But this much stays true<br>
+            If love is made of moments,<br>
+            Then mine are made for you.
+        </p>
 
-                Your browser does not support the audio player.
+        <p>
+            Someday we’ll be older,<br>
+            Laughing ’bout the things we were,<br>
+            But I know I’ll still feel like this<br>
+            Every time you say my name.<br>
+            Even silence feels like home<br>
+            When your hand is holding mine,<br>
+            If I lose my way tomorrow,<br>
+            I’ll find my way to you every time.
+        </p>
 
-            </audio>
+        <p class="chorus">
+            If love is made of moments,<br>
+            Then mine are made for you,<br>
+            In every breath, in every hope,<br>
+            In everything I do.<br>
+            No matter where the road goes<br>
+            Or what we’re walking through,<br>
+            If love is made of moments,<br>
+            Then mine are made for you.
+        </p>
 
-        </div>
-
-
-        <h2 class="lyrics-title">
-            LYRICS
-        </h2>
-
-
-        <div class="lyrics">
-
-
-            <p>
-                You are the thought I return to,<br>
-                Like a favorite song at night,<br>
-                The kind that knows my heartbeat<br>
-                And holds it just right.<br>
-                When the day weighs heavy<br>
-                And the dark comes too quick<br>
-                I don’t reach for answers<br>
-                I just reach for you.
-            </p>
-
-
-            <p>
-                Every road I thought was broken<br>
-                Leads me back to you<br>
-                All the words I never said before<br>
-                Finally feel like they belong.
-            </p>
-
-
-            <p>
-                If love is made of moments,<br>
-                Then mine are made for you,<br>
-                In every breath, in every hope,<br>
-                In everything I do.<br>
-                Yeah, time can try to change us,<br>
-                But this much stays true<br>
-                If love is made of moments,<br>
-                Then mine are made for you.
-            </p>
-
-
-            <p>
-                Your laughter feels like sunlight<br>
-                Finding cracks I didn’t see,<br>
-                And suddenly the world makes sense<br>
-                Because you’re here with me.<br>
-                All the quiet fears I carried<br>
-                Lose their weight<br>
-                Like the chaos in my head<br>
-                Finally settles down.
-            </p>
-
-
-            <p>
-                Every doubt I used to trust<br>
-                Falls apart when you say my name,<br>
-                You don’t promise me forever<br>
-                You just love me all the same.
-            </p>
-
-
-            <p>
-                If love is made of moments,<br>
-                Then mine are made for you,<br>
-                In every breath, in every hope,<br>
-                In everything I do.<br>
-                Yeah, time can try to change us,<br>
-                But this much stays true<br>
-                If love is made of moments,<br>
-                Then mine are made for you.
-            </p>
-
-
-            <p>
-                Someday we’ll be older,<br>
-                Laughing ’bout the things we were,<br>
-                But I know I’ll still feel like this<br>
-                Every time you say my name.<br>
-                Even silence feels like home<br>
-                When your hand is holding mine,<br>
-                If I lose my way tomorrow,<br>
-                I’ll find my way to you every time.
-            </p>
-
-
-            <p>
-                If love is made of moments,<br>
-                Then mine are made for you,<br>
-                In every breath, in every hope,<br>
-                In everything I do.<br>
-                No matter where the road goes<br>
-                Or what we’re walking through,<br>
-                If love is made of moments,<br>
-                Then mine are made for you.
-            </p>
-
-
-            <p>
-                So play me like that old song,<br>
-                Soft and honest, true<br>
-                I’ll keep coming back to love,<br>
-                As long as it sounds like you.
-            </p>
-
-
-        </div>
+        <p>
+            So play me like that old song,<br>
+            Soft and honest, true<br>
+            I’ll keep coming back to love,<br>
+            As long as it sounds like you.
+        </p>
 
     </div>
-
-
-   <a class="back"
-   href="still-loving-you-album.html">
-    ← BACK TO STILL LOVING YOU
-</a>
-
-
-
-    <footer>
-        © 2026 Bill Swaby — All Rights Reserved
-    </footer>
-
 
 </div>
 
+<div class="back-buttons">
+
+    <a class="back-button"
+       href="still-loving-you-album.html">
+        ← BACK TO STILL LOVING YOU
+    </a>
+
+    <a class="back-button"
+       href="https://billswaby.github.io/bill-swaby-music/">
+        ← BACK TO MY MUSIC
+    </a>
+
+</div>
+
+<footer>
+
+    © 2026 Bill Swaby — All Rights Reserved<br>
+    Moments Made For You — Original song by Bill Swaby
+
+</footer>
+
+</div>
 
 <script>
 
 document.querySelector('audio').addEventListener('play', function() {
 
-    if (typeof gtag === 'function') {
-
-        gtag('event', 'song_play', {
-
-            song_title: '01 Moments Made For You',
-
-            album: 'Still Loving You'
-
-        });
-
-    }
+    gtag('event', 'song_play', {
+        song_title: '01 Moments Made For You',
+        album: 'Still Loving You'
+    });
 
 });
 
 </script>
-
 
 </body>
 </html>
