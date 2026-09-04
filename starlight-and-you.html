@@ -2,309 +2,321 @@
 <html lang="en">
 <head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9P135SD0D3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9P135SD0D3"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-9P135SD0D3');
-    </script>
+    gtag('config', 'G-9P135SD0D3');
+</script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Starlight and You — Bill Swaby</title>
+<meta name="description" content="Starlight and You by Bill Swaby — a heartfelt love song about devotion, forever love, and finding home in another person.">
 
-    <meta name="description"
-          content="Starlight and You by Bill Swaby — a heartfelt love song about devotion, forever love, and finding home in another person.">
+<title>Starlight and You — Bill Swaby</title>
 
-    <style>
+<style>
 
-        * {
-            box-sizing: border-box;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        body {
-            margin: 0;
-            background: #050505;
-            color: #e8e0d0;
-            font-family: Georgia, "Times New Roman", serif;
-        }
+body {
+    margin: 0;
+    background: #050505;
+    color: #e8e0d0;
+    font-family: Georgia, "Times New Roman", serif;
+}
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 50px 25px;
-        }
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
 
-        header {
-            text-align: center;
-            padding-bottom: 45px;
-        }
+header {
+    text-align: center;
+    padding-bottom: 45px;
+}
 
-        h1 {
-            margin: 0;
-            color: #d4af37;
-            font-size: 38px;
-            letter-spacing: 3px;
-        }
+h1 {
+    margin: 0;
+    color: #d4af37;
+    font-size: 42px;
+    letter-spacing: 4px;
+}
 
-        .subtitle {
-            margin-top: 12px;
-            color: #bdb5a5;
-            font-size: 18px;
-        }
+.subtitle {
+    margin-top: 12px;
+    color: #bdb5a5;
+    font-size: 18px;
+}
 
-        .song-page {
-            background: #0b0b0b;
-            border: 1px solid #3d3422;
-            border-radius: 8px;
-            padding: 30px;
-        }
+.album-name {
+    margin-top: 10px;
+    color: #9d8245;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
 
-        .song-cover-placeholder {
-            width: 350px;
-            height: 380px;
-            margin: 0 auto 35px auto;
-            border: 1px solid #d4af37;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #777;
-            font-size: 16px;
-            letter-spacing: 1px;
-        }
+.song {
+    background: #0b0b0b;
+    border: 1px solid #3d3422;
+    border-radius: 8px;
+    padding: 30px;
+}
 
-        .song-description {
-            max-width: 650px;
-            margin: 0 auto 35px auto;
-            text-align: center;
-            color: #aaa;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+.song-cover {
+    display: block;
+    width: 300px;
+    height: 410px;
+    object-fit: cover;
+    margin: 0 auto 30px auto;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+}
 
-        audio {
-            display: block;
-            width: 100%;
-            margin: 25px auto 40px auto;
-        }
+.description {
+    max-width: 680px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    color: #aaa;
+    font-size: 17px;
+    line-height: 1.7;
+}
 
-        .lyrics-title {
-            color: #d4af37;
-            text-align: center;
-            font-size: 26px;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-        }
+audio {
+    display: block;
+    width: 100%;
+    margin: 0 auto 40px auto;
+}
 
-        .lyrics {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-            color: #ddd;
-            font-size: 17px;
-            line-height: 1.8;
-        }
+.section-title {
+    color: #d4af37;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #3d3422;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
 
-        .lyrics p {
-            margin: 0 0 28px 0;
-        }
+.lyrics {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-        .back {
-            display: block;
-            text-align: center;
-            margin-top: 35px;
-            color: #d4af37;
-            text-decoration: none;
-            font-size: 20px;
-        }
+.lyrics p {
+    color: #d8d0c0;
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 0 28px 0;
+}
 
-        .back:hover {
-            text-decoration: underline;
-        }
+.lyrics .chorus {
+    color: #e6c75a;
+}
 
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 25px;
-            border-top: 1px solid #292929;
-            color: #777;
-            font-size: 14px;
-        }
+.back-buttons {
+    text-align: center;
+    margin-top: 40px;
+}
 
-        @media (max-width: 600px) {
+.back-button {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 24px;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    background: #0b0b0b;
+    border-radius: 6px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
 
-            .container {
-                padding: 35px 15px;
-            }
+.back-button:hover {
+    background: #15120e;
+    color: #ffffff;
+}
 
-            h1 {
-                font-size: 30px;
-            }
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid #292929;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
 
-            .song-cover-placeholder {
-                width: 100%;
-                max-width: 350px;
-                height: auto;
-                aspect-ratio: 350 / 380;
-            }
+@media (max-width: 600px) {
 
-            .song-page {
-                padding: 20px;
-            }
+    .container {
+        padding: 35px 18px;
+    }
 
-            .lyrics {
-                font-size: 16px;
-            }
-        }
+    h1 {
+        font-size: 32px;
+    }
 
-    </style>
+    .song {
+        padding: 20px;
+    }
+
+    .song-cover {
+        width: 100%;
+        height: auto;
+    }
+
+    .lyrics p {
+        font-size: 16px;
+    }
+
+}
+
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <header>
+<header>
 
-        <h1>STARLIGHT AND YOU</h1>
+    <h1>STARLIGHT AND YOU</h1>
 
-        <div class="subtitle">
-            Song 02 — Still Loving You
-        </div>
+    <div class="subtitle">
+        Bill Swaby
+    </div>
 
-    </header>
+    <div class="album-name">
+        Still Loving You — Song 02
+    </div>
 
+</header>
 
-    <div class="song-page">
+<div class="song">
 
-        <!-- Artwork placeholder -->
+    <!-- Artwork will be added here when ready -->
 
-        <div class="song-cover-placeholder">
-            STARLIGHT AND YOU<br>
-            Artwork Coming Soon
-        </div>
+    <div class="song-cover"
+         style="display: flex; align-items: center; justify-content: center; text-align: center; color: #777; font-size: 16px; letter-spacing: 1px;">
+        STARLIGHT AND YOU<br>
+        Artwork Coming Soon
+    </div>
 
+    <p class="description">
+        A song about finding something extraordinary in another person —
+        a love that feels bigger than time, distance, or anything the world
+        can throw at you. A love that becomes a compass, a shelter, and a
+        place to call home.
+    </p>
 
-        <p class="song-description">
-            Starlight and You is a song about finding something extraordinary
-            in another person — a love that feels bigger than time, distance,
-            or anything the world can throw at you. A love that becomes a
-            compass, a shelter, and a place to call home.
+    <audio controls controlsList="nodownload">
+        <source src="Starlight%20and%20You.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+
+    <h2 class="section-title">LYRICS</h2>
+
+    <div class="lyrics">
+
+        <p>
+            You’re the whisper of midnight, soft as a sigh,<br>
+            A galaxy trapped in your eyes.<br>
+            Every laugh paints the sky, every glance lights the way,<br>
+            You’re the rhythm that steals my breath in the fray.
         </p>
 
+        <p>
+            Oh, you’re a miracle wrapped in a smile,<br>
+            A symphony I can’t quite decode.<br>
+            In your heartbeat, the universe feels whole—<br>
+            You’re my forever, my tomorrow, my home.
+        </p>
 
-        <!-- Audio -->
+        <p class="chorus">
+            Starlight and you, we’re a perfect collision,<br>
+            A dance of sparks in the dark, a promise unspoken.<br>
+            Through every season, through every storm,<br>
+            I’ll chase your shadow ‘til the stars burn out.<br>
+            You’re my compass, my shelter, my endless desire—<br>
+            Starlight and you, my soul’s only fire.
+        </p>
 
-        <audio controls controlsList="nodownload">
-            <source src="Starlight%20and%20You.mp3" type="audio/mpeg">
-            Your browser does not support the audio player.
-        </audio>
+        <p>
+            Your voice is a melody that hums in my bones,<br>
+            A lullaby for the chaos I’ve known.<br>
+            You turn chaos to calm, storms to serene,<br>
+            In your arms, the world feels like a dream.
+        </p>
 
+        <p>
+            Oh, you’re a masterpiece I can’t ignore,<br>
+            A love that’s wild, a flame I can’t store.<br>
+            In your gaze, I’m seen, not just for a while—<br>
+            You’re my forever, my tomorrow, my home.
+        </p>
 
-        <!-- Lyrics -->
+        <p class="chorus">
+            Starlight and you, we’re a perfect collision,<br>
+            A dance of sparks in the dark, a promise unspoken.<br>
+            Through every season, through every storm,<br>
+            I’ll chase your shadow ‘til the stars burn out.<br>
+            You’re my compass, my shelter, my endless desire—<br>
+            Starlight and you, my soul’s only fire.
+        </p>
 
-        <h2 class="lyrics-title">
-            LYRICS
-        </h2>
-
-        <div class="lyrics">
-
-            <p>
-                You’re the whisper of midnight, soft as a sigh,<br>
-                A galaxy trapped in your eyes.<br>
-                Every laugh paints the sky, every glance lights the way,<br>
-                You’re the rhythm that steals my breath in the fray.
-            </p>
-
-            <p>
-                Oh, you’re a miracle wrapped in a smile,<br>
-                A symphony I can’t quite decode.<br>
-                In your heartbeat, the universe feels whole—<br>
-                You’re my forever, my tomorrow, my home.
-            </p>
-
-            <p>
-                Starlight and you, we’re a perfect collision,<br>
-                A dance of sparks in the dark, a promise unspoken.<br>
-                Through every season, through every storm,<br>
-                I’ll chase your shadow ‘til the stars burn out.<br>
-                You’re my compass, my shelter, my endless desire—<br>
-                Starlight and you, my soul’s only fire.
-            </p>
-
-            <p>
-                Your voice is a melody that hums in my bones,<br>
-                A lullaby for the chaos I’ve known.<br>
-                You turn chaos to calm, storms to serene,<br>
-                In your arms, the world feels like a dream.
-            </p>
-
-            <p>
-                Oh, you’re a masterpiece I can’t ignore,<br>
-                A love that’s wild, a flame I can’t store.<br>
-                In your gaze, I’m seen, not just for a while—<br>
-                You’re my forever, my tomorrow, my home.
-            </p>
-
-            <p>
-                Starlight and you, we’re a perfect collision,<br>
-                A dance of sparks in the dark, a promise unspoken.<br>
-                Through every season, through every storm,<br>
-                I’ll chase your shadow ‘til the stars burn out.<br>
-                You’re my compass, my shelter, my endless desire—<br>
-                Starlight and you, my soul’s only fire.
-            </p>
-
-            <p>
-                If time fades the colors, if memories fade,<br>
-                I’ll rewrite the universe just to hold you again.<br>
-                No distance, no doubt, no fading light<br>
-                You’re my forever, my tomorrow, my home.
-            </p>
-
-        </div>
+        <p>
+            If time fades the colors, if memories fade,<br>
+            I’ll rewrite the universe just to hold you again.<br>
+            No distance, no doubt, no fading light<br>
+            You’re my forever, my tomorrow, my home.
+        </p>
 
     </div>
 
+</div>
 
-    <!-- Back to album -->
+<div class="back-buttons">
 
-    <a class="back"
+    <a class="back-button"
        href="still-loving-you-album.html">
         ← BACK TO STILL LOVING YOU
     </a>
 
-
-    <footer>
-        © 2026 Bill Swaby — All Rights Reserved
-    </footer>
+    <a class="back-button"
+       href="https://billswaby.github.io/bill-swaby-music/">
+        ← BACK TO MY MUSIC
+    </a>
 
 </div>
 
+<footer>
 
-<!-- Google Analytics — Song Play Tracking -->
+    © 2026 Bill Swaby — All Rights Reserved<br>
+    Starlight and You — Original song by Bill Swaby
+
+</footer>
+
+</div>
 
 <script>
 
 document.querySelector('audio').addEventListener('play', function() {
 
-    if (typeof gtag === 'function') {
-
-        gtag('event', 'song_play', {
-
-            song_title: '02 Starlight and You',
-
-            album: 'Still Loving You'
-
-        });
-
-    }
+    gtag('event', 'song_play', {
+        song_title: '02 Starlight and You',
+        album: 'Still Loving You'
+    });
 
 });
 
@@ -312,5 +324,4 @@ document.querySelector('audio').addEventListener('play', function() {
 
 </body>
 </html>
-
 
